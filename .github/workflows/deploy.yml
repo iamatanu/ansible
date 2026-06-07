@@ -28,7 +28,8 @@ jobs:
 
             cd /home/cloud_user/ansible-test/ansible
 
+            git checkout main
             git fetch origin
-            git reset --hard origin/master
+            git reset --hard origin/main
 
-            ansible-playbook -i inventory/base.inv playbooks/main.yml
+            ansible-playbook -i inventory/base.inv playbooks/main.yaml
