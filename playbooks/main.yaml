@@ -1,9 +1,10 @@
 ---
 - name: Install packages on all hosts
   hosts: all
-  ansible_user: cloud_user
+  remote_user: cloud_user
   become: true
   tasks:
   - name: Install tree
-    ansible.builtin.dnf: tree
-    state: present
+    ansible.builtin.dnf: 
+      name: tree
+      state: present
