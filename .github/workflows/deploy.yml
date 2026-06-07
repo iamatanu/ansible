@@ -19,6 +19,13 @@ jobs:
           key: ${{ secrets.ANSIBLE_SSH_KEY }}
 
           script: |
+            source ~/miniconda3/etc/profile.d/conda.sh
+            conda activate devops-env
+
+
+            which git
+            which ansible-playbook
+
             cd /home/cloud_user/ansible-test/ansible
 
             git fetch origin
