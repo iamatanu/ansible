@@ -1,0 +1,4 @@
+servera ansible_python_interpreter=/usr/bin/python3.9
+serverb ansible_python_interpreter=/usr/bin/python3.9
+serverc ansible_python_interpreter=/usr/bin/python3.9
+serverd ansible_python_interpreter=/usr/bin/python3.9
